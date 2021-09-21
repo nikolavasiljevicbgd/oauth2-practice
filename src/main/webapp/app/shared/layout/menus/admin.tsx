@@ -10,9 +10,6 @@ const adminMenuItems = (
     <MenuItem icon="road" to="/admin/gateway">
       Gateway
     </MenuItem>
-    <MenuItem icon="user" to="/admin/user-management">
-      User management
-    </MenuItem>
     <MenuItem icon="tachometer-alt" to="/admin/metrics">
       Metrics
     </MenuItem>

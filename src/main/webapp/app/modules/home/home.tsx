@@ -8,6 +8,7 @@ import { Row, Col, Alert } from 'reactstrap';
 
 import { IRootState } from 'app/shared/reducers';
 import { getSession } from 'app/shared/reducers/authentication';
+import { getLoginUrl } from 'app/shared/util/url-utils';
 
 export interface IHomeProp extends StateProps, DispatchProps {}
 
@@ -31,20 +32,12 @@ export class Home extends React.Component<IHomeProp> {
             <div>
               <Alert color="warning">
                 If you want to
-                <Link to="/login" className="alert-link">
-                  {' '}
+                <a href={getLoginUrl()} className="alert-link">
                   sign in
-                </Link>
+                </a>
                 , you can try the default accounts:
                 <br />- Administrator (login=&quot;admin&quot; and password=&quot;admin&quot;)
                 <br />- User (login=&quot;user&quot; and password=&quot;user&quot;).
-              </Alert>
-
-              <Alert color="warning">
-                You do not have an account yet?&nbsp;
-                <Link to="/register" className="alert-link">
-                  Register a new account
-                </Link>
               </Alert>
             </div>
           )}

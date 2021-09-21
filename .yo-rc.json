@@ -9,7 +9,7 @@
     "packageName": "com.demo",
     "packageFolder": "com/demo",
     "serverPort": "8088",
-    "authenticationType": "jwt",
+    "authenticationType": "oauth2",
     "cacheProvider": "ehcache",
     "enableHibernateCache": true,
     "websocket": false,
