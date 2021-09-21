@@ -1,0 +1,37 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.demo"
+    },
+    "jhipsterVersion": "6.0.1",
+    "applicationType": "gateway",
+    "baseName": "demojwt",
+    "packageName": "com.demo",
+    "packageFolder": "com/demo",
+    "serverPort": "8088",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "postgresql",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "MTMyYTQyMGQyYjZkYTdkMjYwOTgwMDM3ZTc4NjA5NzU3ZjM5OTQxMzkwMGE5OTRlNGQwNWQyYzFjY2E3MzlkZjFhMWY4ODBiNmQ4MDgwNmQ2NDE0NmVkNjhiYWM5ZWIxMmUxMTdmZDE2Y2FjNzU4NGNlNzRkZWNjYTcwZTE3NzA=",
+    "clientFramework": "react",
+    "clientTheme": "none",
+    "clientThemeVariant": "",
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false
+  }
+}
