@@ -2,6 +2,7 @@ package com.demo.repository;
 
 import com.demo.DemojwtApp;
 import com.demo.config.Constants;
+import com.demo.config.TestSecurityConfiguration;
 import com.demo.config.audit.AuditEventConverter;
 import com.demo.domain.PersistentAuditEvent;
 import org.junit.jupiter.api.BeforeEach;
@@ -27,7 +28,7 @@ import static com.demo.repository.CustomAuditEventRepository.EVENT_DATA_COLUMN_M
 /**
  * Integration tests for {@link CustomAuditEventRepository}.
  */
-@SpringBootTest(classes = DemojwtApp.class)
+@SpringBootTest(classes = {DemojwtApp.class, TestSecurityConfiguration.class})
 @Transactional
 public class CustomAuditEventRepositoryIT {
 

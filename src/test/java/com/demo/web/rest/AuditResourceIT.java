@@ -1,6 +1,7 @@
 package com.demo.web.rest;
 
 import com.demo.DemojwtApp;
+import com.demo.config.TestSecurityConfiguration;
 import com.demo.config.audit.AuditEventConverter;
 import com.demo.domain.PersistentAuditEvent;
 import com.demo.repository.PersistenceAuditEventRepository;
@@ -30,7 +31,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 /**
  * Integration tests for the {@link AuditResource} REST controller.
  */
-@SpringBootTest(classes = DemojwtApp.class)
+@SpringBootTest(classes = {DemojwtApp.class, TestSecurityConfiguration.class})
 @Transactional
 public class AuditResourceIT {
 
